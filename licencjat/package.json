@@ -9,8 +9,9 @@
   },
   "dependencies": {
     "body-parser": "^1.12.4",
+    "crypto": "0.0.3",
     "express": "3.4.4",
-    "jade": "*",
+    "jsonwebtoken": "^5.0.5",
     "mongodb": "^1.4.38",
     "mongoskin": "^1.4.13",
     "stylus": "*"

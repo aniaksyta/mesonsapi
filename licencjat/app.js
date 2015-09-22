@@ -31,10 +31,13 @@ if ('development' == app.get('env')) {
     app.use(express.errorHandler());
 }
 
-app.get('/mesons', routes.index);
-app.get('/users', user.list);
-app.get('/mesons/:key/:value', routes.getMethod);
-app.post('/mesons', routes.postMethod);
+app.get('/mesons/:token', routes.index);
+app.get('/mesons/:token/:key/:value', routes.getMethod);
+app.post('/mesons/:token', routes.postMethod);
+app.delete('/mesons/:token', routes.deleteMethod);
+app.put('/mesons/:token/:id/:key/:value', routes.updateMethod);
+app.post('/setup', routes.setupMethod);
+app.post('/authenticate', routes.authenticateMethod);
 
 http.createServer(app).listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));

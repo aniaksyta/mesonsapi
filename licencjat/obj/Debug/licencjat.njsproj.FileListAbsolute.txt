@@ -1,0 +1,2 @@
+D:\licencjat\licencjat\licencjat\obj\Debug\licencjat.njsprojResolveAssemblyReference.cache
+D:\licencjat\licencjat\licencjat\bin\Microsoft.NodejsTools.WebRole.dll
